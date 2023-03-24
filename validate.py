@@ -277,10 +277,6 @@ def is_section_in_header(section: SectionHeader,
 def parse_args():
     parser = argparse.ArgumentParser(
         description='Program used to validate all symbols are RELRO')
-    parser.add_argument('--output-format',
-                        choices=['json', 'shell'],
-                        help='Output format',
-                        default='shell')
     parser.add_argument('binary', help='Path to binary to examine')
     return parser.parse_args()
 
